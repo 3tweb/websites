@@ -1,0 +1,257 @@
+/*
+Theme Name: Liberty Midstream (Responsive)
+Theme URI: http://www.3tpro.com
+Author: Steven Spencer (3tpro)
+Author URI: http://www.3tpro.com
+Description: This is a custom theme for Liberty Midstream's website.
+Version: 1.0
+License: NONE.
+
+This is a private design created and owned by 3tpro.com. Any unauthorized use is a violation of the copyright laws protecting it and subject to legal action.
+*/
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image:url(images/bg.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:50% 50%;
+	background-size:cover;
+}
+
+.header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:auto;
+	z-index:100000;
+	width:100%;
+	height:150px;
+	background:#fff;
+	-moz-box-shadow: 0 0 35px #000;
+	-webkit-box-shadow: 0 0 35px #000;
+	box-shadow: 0 0 35px #000;
+	behavior: url(scripts/pie/PIE.htc);
+}
+
+.h_wrapper {
+	position:relative;
+	margin:auto;
+	width:960px;
+	z-index:200000;
+}
+
+.logo {
+	position:fixed;
+	margin-left:50px;
+	margin-top:15px;
+}
+
+.content {
+	position:relative;
+	min-height:300px;
+	width:880px;
+	background-color:#FFF;
+	margin:auto;
+	top:180px;
+	-moz-box-shadow: 0 0 35px #000;
+	-webkit-box-shadow: 0 0 35px #000;
+	box-shadow: 0 0 35px #000;
+	behavior: url(scripts/pie/PIE.htc);
+	padding:40px;
+}
+
+.content p, h1, h2, h3, h4, h5, h6 {
+	font-family:Verdana, Geneva, sans-serif;
+	margin-top:0;
+}
+
+.content p {
+	font-size:0.8em;
+}
+
+.content_right {
+	float:right;
+	text-align:left;
+	width:600px;
+}
+
+.content_left {
+	width:280px;
+	float:left;
+}
+
+.footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	margin:auto;
+	z-index:100000;
+	width:100%;
+	height:50px;
+	background:#333;
+	-moz-box-shadow: 0 0 35px #000;
+	-webkit-box-shadow: 0 0 35px #000;
+	box-shadow: 0 0 35px #000;
+	behavior: url(scripts/pie/PIE.htc);
+}
+
+.c_wrap{
+	position:relative;
+	margin:auto;
+	width:960px;
+	z-index:200000;
+	bottom:0;
+}
+
+.footer p {
+	font-size:0.7em;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#fafafa;
+}
+
+.footer a {
+	color:#bababa;
+	text-decoration:none;
+}
+
+p#copyright {
+	position: relative;
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+}
+
+.nav {
+}
+
+.clear {
+	clear:both;
+}
+
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 60px;
+    text-align: center;
+}
+#cssmenu {
+    font-weight: 600;
+    height: 52px;
+    width: auto;
+    float:right;
+    top:100px;
+    top: 60px;
+    right: 50px;
+    position: relative;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+    color: #4f4f4f;
+    display: inline-block;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 52px;
+    padding: 0 28px;
+    text-decoration: none;
+}
+#cssmenu ul {
+    list-style: none;
+}
+#cssmenu > li {
+    -moz-transition: all 300ms ease-in-out 0s;
+    -ms-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+#cssmenu li a {
+    -moz-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -ms-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -o-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -webkit-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+}   
+#cssmenu > ul {
+    float: left;
+}
+#cssmenu > ul > li {
+    float: left;
+    margin-left:30px;
+}
+#cssmenu > ul > li:first-child a {
+}
+#cssmenu > ul > li a {
+    border-bottom: 6px solid #4f4f4f;
+}
+#cssmenu > ul > li.active a {
+    border-bottom: 6px solid #20285c;
+}
+#cssmenu > ul > li:hover > a {
+    border-bottom: 6px solid #20285c;
+}
+#cssmenu .has-sub {
+    z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+    display: block;
+}
+#cssmenu .has-sub ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0;
+}
+#cssmenu .has-sub ul li a {
+    background: #666666;
+    border-bottom: 1px solid #59636f;
+    border-bottom: 1px solid #556371;
+    box-shadow: inset 0 1px 0 #606f7f;
+    -moz-box-shadow: inset 0 1px 0 #606f7f;
+    -webkit-box-shadow: inset 0 1px 0 #606f7f;
+    color: white;
+    display: block;
+    line-height: 160%;
+    padding: 15px 10px;
+    font-size: 12px;
+    text-align: left;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #444444;
+  box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #606f7f;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #4a5662;
+  box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+}
+
